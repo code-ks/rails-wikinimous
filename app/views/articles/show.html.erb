@@ -1,0 +1,11 @@
+<div class="container">
+  <h1>Article</h1>
+    <p>
+      <%= link_to 'Edit article', edit_article_path %>
+      <%= link_to 'Delete', article_path, method: :delete, ata: { confirm: "Are you sure?" } %>
+    </p>
+    <p>
+      <%= @article.content %>
+    </p>
+  <%= link_to 'Back', root_path %>
+</div>
